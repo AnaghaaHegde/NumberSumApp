@@ -276,7 +276,7 @@
             function fetchCurrentSum() {
                 setLoading(true);
                 
-                fetch(`$https://anaghaahegde.github.io/NumberSumApp/sum`)
+                fetch(`https://anaghaahegde.github.io/NumberSumApp/sum`)
                     .then(response => {
                         if (!response.ok) {
                             throw new Error('Failed to fetch sum');
@@ -297,7 +297,7 @@
             
             // Fetch the history from the server
             function fetchHistory() {
-                fetch(`$https://anaghaahegde.github.io/NumberSumApp/history`)
+                fetch(`https://anaghaahegde.github.io/NumberSumApp/history`)
                     .then(response => {
                         if (!response.ok) {
                             throw new Error('Failed to fetch history');
@@ -343,7 +343,7 @@
                 toggleSignButton.disabled = true;
                 
                 // Send the number to the server
-                fetch(`$https://anaghaahegde.github.io/NumberSumApp//add`, {
+                fetch(`https://anaghaahegde.github.io/NumberSumApp//add`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
