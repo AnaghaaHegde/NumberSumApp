@@ -228,7 +228,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Base URL for the API (change this to your server address)
-            const API_URL = 'http://localhost:3000/api';
+            const API_URL = 'https://anaghaahegde.github.io/NumberSumApp/';
             
             // Get DOM elements
             const sumDisplay = document.getElementById('sumValue');
@@ -276,7 +276,7 @@
             function fetchCurrentSum() {
                 setLoading(true);
                 
-                fetch(`${API_URL}/sum`)
+                fetch(`$https://anaghaahegde.github.io/NumberSumApp/sum`)
                     .then(response => {
                         if (!response.ok) {
                             throw new Error('Failed to fetch sum');
@@ -297,7 +297,7 @@
             
             // Fetch the history from the server
             function fetchHistory() {
-                fetch(`${API_URL}/history`)
+                fetch(`$https://anaghaahegde.github.io/NumberSumApp/history`)
                     .then(response => {
                         if (!response.ok) {
                             throw new Error('Failed to fetch history');
@@ -343,7 +343,7 @@
                 toggleSignButton.disabled = true;
                 
                 // Send the number to the server
-                fetch(`${API_URL}/add`, {
+                fetch(`$https://anaghaahegde.github.io/NumberSumApp//add`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
